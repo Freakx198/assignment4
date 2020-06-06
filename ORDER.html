@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+    
+      
+        .bulletin {
+            display: grid;
+        }
+        .menu1 {
+            display: grid;
+        }
+        .navbar {
+            background-color: rgb(102, 218, 226) !important;
+        }
+        
+        .scrolltxt {
+            display: grid;
+            margin: 40px 90px;
+        }
+
+        .social {
+            display: grid;
+            justify-content: end;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            
+        }
+        .foot1 {
+            display: grid;
+            background-color: rgb(102, 218, 226) !important;
+            text-align: center;
+        }
+    </style>
+
+    <title>ABOUT US</title>
+  </head>
+  <body>
+      <div>
+        <div class="bulletin">
+          <div class="row">
+              <p style="margin-top: 12px; background-color: rgb(87, 231, 131); color: rgb(82, 53, 53); ">
+                  <marquee direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+                    Hurry up and avail 25% clearance discount on Ramadan collection on order above PKR 5,000.DUE TO THE OVERWHELMING RESPONSE, THE DELIVERIES OF ORDERS MAY BE DELAYED. NO RETURN, NO EXCHANGE ON SALE ITEMS. FREE SHIPPING ON THE ORDERS OVER PKR 2,999.
+                      </marquee>
+    
+              </p>
+          </div>
+      </div>
+    
+    <div class="menu1">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img height="100px" width="150px"  src="img/logo copy.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="ABOUTUS.html">About Us<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Products.HTML">Products</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="ORDER.html">Order</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Feedback.html">Feedback</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="CONTACTUS.html">Contact Us</a>
+              </li>
+          </ul>
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+          <a href="REGISTRATION.html">Sign in / Register</a>
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <a href="ORDER.html">Shopping Cart</a> 
+        </div>
+      </nav>
+    </div>
+      
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" >
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" >
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" >
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" >
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" >
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" >
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" >
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" >
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" >
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" >
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+          <b>4</b>
+        </span>
+      </h4>
+      <p><a href="#">Product 1</a> <span class="price">PKR 0.</span></p>
+      <p><a href="#">Product 2</a> <span class="price">PKR 0.</span></p>
+      <p><a href="#">Product 3</a> <span class="price">PKR 0.</span></p>
+      <p><a href="#">Product 4</a> <span class="price">PKR 0.</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>PKR 0.</b></span></p>
+    </div>
+  </div>
+</div>
+      
+<div class="social">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>Follow us on : <br>
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-youtube" aria-hidden="true"></i></div>
+    </div>
+    <div class="foot1">
+        <p>
+            Copyright<i class="fa fa-copyright" aria-hidden="true"></i>
+            My Assignment. All rights reserved
+        </p>
+    </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
